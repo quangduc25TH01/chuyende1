@@ -1,0 +1,16 @@
+export const information = {
+  shopName: "Shop Áo Quần",
+  shopLogo: "/logos/lyxanh_logo.png",
+  address: "Số 504, Đại lộ Bình Dương, Hiệp Thành, Thủ Dầu Một, Bình Dương",
+  phones: ["0123456789"],
+  emails: ["aaa.aaa@edu.com"],
+  facebook: "https://www.facebook.com/",
+  instagram: "https://www.instagram.com/",
+  twitter: "https://twitter.com/",
+  youtube: "https://www.youtube.com/",
+  tiktok: "https://www.tiktok.com/",
+  zalo: "https://zalo.me/",
+  shoppe: "https://shopee.vn/",
+  lazada: "https://www.lazada.vn/shop/",
+  tiki: "https://tiki.vn/",
+};

@@ -1,0 +1,12 @@
+.text-pending {
+  color: #ffd700;
+}
+.text-shipping {
+  color: #ffa500;
+}
+.text-completed {
+  color: #008000;
+}
+.text-canceled {
+  color: #ff0000;
+}
