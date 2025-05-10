@@ -1,0 +1,12 @@
+.map-container {
+  border-radius: 8px;
+  min-height: 686px;
+
+  @media (max-width: 1024px) {
+    min-height: 400px;
+  }
+
+  @media (max-width: 640px) {
+    min-height: 350px;
+  }
+}

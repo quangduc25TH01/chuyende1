@@ -1,0 +1,44 @@
+.cart-widget-side {
+  height: 100%;
+  top: 0;
+  width: 340px;
+  z-index: 99999;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #ffffff;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  right: 0;
+  left: auto;
+  transform: translate3d(100%, 0, 0);
+  &.open {
+    transform: translate3d(0, 0, 0);
+  }
+
+  @media screen and (min-width: 640px) {
+    & {
+       width: 400px;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  z-index: 400;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), visibility 0s cubic-bezier(0.19, 1, 0.22, 1) 0.5s, z-index 0s cubic-bezier(0.19, 1, 0.22, 1) 0.5s, top 0s cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+  }
+
+  
+}

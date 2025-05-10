@@ -1,0 +1,114 @@
+.printing-services-page {
+  .contact-button {
+    border-radius: 50px;
+    display: inline-block;
+    padding: 8px 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    background: #f7f7f9;
+    border: 1px solid #e6e6ea;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: #3165ff;
+    border: 1px solid rgb(226, 232, 240);
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 0;
+      height: 100%;
+      background: #3165ff;
+      z-index: -1;
+      transition: 0.5s;
+      bottom: 0;
+    }
+
+    &:hover {
+      color: #FFFFFF;
+      &::before{
+        width: 100%;
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  
+.info-img {
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+  position: absolute;
+  transition: all 0.2s;
+
+  &:first-child {
+    top: 0;
+    left: 25%;
+    z-index: 2;
+    animation: runFirst 10s infinite;
+  }
+
+  &:nth-child(2) {
+    top: 0;
+    left: 25%;
+    z-index: 2;
+    animation: runLast 10s infinite;
+  }
+}
+
+@keyframes runFirst {
+  0% {
+    top: 0px;
+    left: 0px;
+  };
+
+  25% {
+    top: 35%;
+    left: 0;
+  };
+
+  50% {
+    top: 35%;
+    left: 50%;
+  };
+
+  75% {
+    top: 0;
+    left: 50%;
+  };
+
+  100% {
+    top: 0;
+    left: 0;
+  };
+}
+
+@keyframes runLast {
+  0% {
+    top: 35%;
+    left: 50%;
+  };
+
+  25% {
+    top: 0px;
+    left: 50%;
+  };
+
+  50% {
+    top: 0;
+    left: 0;
+  };
+
+  75% {
+    top: 35%;
+    left: 0;
+  };
+
+  100% {
+    top: 35%;
+    left: 50%;
+  };
+}
+}
+

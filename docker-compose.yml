@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  admin:
+    build:
+      context: ./ecommerce-admin
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./ecommerce-admin:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
+
+  web:
+    build:
+      context: ./ecommerce-web
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./ecommerce-web:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
+
+  backend:
+    build:
+      context: ./ecommerce-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./ecommerce-backend:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true

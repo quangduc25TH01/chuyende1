@@ -1,0 +1,8 @@
+.item {
+  transition: color 0.3s;
+  &:hover {
+    .title {
+      color: #ffbc4c;
+    }
+  }
+}
